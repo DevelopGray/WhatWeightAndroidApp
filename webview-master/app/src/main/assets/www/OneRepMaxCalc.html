@@ -1,0 +1,46 @@
+<!doctype html>
+
+<!-- Created by DevelopGray on 9/23/2015. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>1 Rep Max Calculator</title>
+    <meta name="description" content="What weight should I be lifting">
+    <meta name="author" content="DevelopGray">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <p id="ormOutput">Your One Rep Max is:</p>
+    <p id="orm">(Click Calculate)</p>
+
+    <form class="oneRepForm">
+        Weight:
+        <input type="number" id="weight" placeholder="Input Weight Here" required/>
+        <br> Reps:
+        <select id="reps" required>
+			<option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <input class="button" type="button" value="Calculate" onClick="calculateORM()" />
+    </form>
+    <a class="button" href="javascript:history.back()">Menu</a>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
